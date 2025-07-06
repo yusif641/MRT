@@ -1,0 +1,33 @@
+.book {
+    background-color: $accent;
+    padding: 88px 0px;
+
+    &__container {
+        color: $white;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(36);
+        line-height: 167%;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: rem(18);
+        line-height: 167%;
+        margin-bottom: 70px;
+        max-width: 626px;
+        margin-inline: auto;
+    }
+
+    &__button {
+        display: inline;
+        padding: 24px 48px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        padding: 24px 48px;
+    }
+}

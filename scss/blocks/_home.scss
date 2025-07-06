@@ -1,0 +1,52 @@
+.home {
+    padding: 60px 0px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 518px;
+    }
+
+    &__title {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: rem(46);
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: $accent;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: rem(30);
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+    }
+
+    &__subtext {
+        font-family: "Inter Tight", sans-serif;
+        color: $gray;
+        max-width: 470px;
+        font-size: 19px;
+        line-height: 150%;
+    }
+
+    &__info {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        bottom: -30px;
+        right: 0px;
+    }
+}
