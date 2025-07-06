@@ -1,18 +1,27 @@
 .team {
     padding: 80px 0px;
 
+    @media (max-width: 768px) {
+        padding: 40px 0px;
+    }
+
     &__title {
         text-align: center;
         font-weight: 700;
         font-size: rem(56);
         line-height: 132%;
         margin-bottom: 8px;
+
+        @media (max-width: 768px) {
+            font-size: rem(32);
+        }
     }
 
     &__content {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 40px;
     }
 

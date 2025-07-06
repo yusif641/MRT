@@ -1,18 +1,26 @@
 .us {
     padding: 80px 0px;
 
+    @media (max-width: 768px) {
+        padding: 40px 0px;
+    }
+
     &__title {
         font-weight: 700;
         font-size: rem(56);
         line-height: 132%;
         margin-bottom: 8px;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: rem(32);
+        }
     }
 
     &__content {
         display: flex;
         align-items: stretch;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 72px;
     }
@@ -25,6 +33,11 @@
         background-color: #f8fafc;
         max-width: 384px;
         text-align: center;
+        min-width: 300px;
+
+        @media (max-width: 768px) {
+            padding: 20px 15px;
+        }
     }
 
     &__image {

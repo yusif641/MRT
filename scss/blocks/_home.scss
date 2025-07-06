@@ -5,10 +5,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 35px;
     }
 
     &__content {
         max-width: 518px;
+        margin: 0 auto;
+
+        @media (max-width: 528px) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -19,6 +26,10 @@
         letter-spacing: -0.02em;
         color: $accent;
         margin-bottom: 20px;
+
+        @media (max-width: 528px) {
+            font-size: rem(35);
+        }
     }
 
     &__text {
@@ -28,6 +39,10 @@
         line-height: 110%;
         letter-spacing: -0.02em;
         margin-bottom: 20px;
+
+        @media (max-width: 528px) {
+            font-size: rem(22);
+        }
     }
 
     &__subtext {
@@ -36,10 +51,19 @@
         max-width: 470px;
         font-size: 19px;
         line-height: 150%;
+
+        @media (max-width: 528px) {
+            font-size: 16px;
+        }
     }
 
     &__info {
         position: relative;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__icon {
