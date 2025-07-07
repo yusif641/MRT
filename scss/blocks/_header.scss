@@ -1,5 +1,9 @@
 .header {
-    padding-top: 44px;
+    padding: 44px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
 
     &__container {
         display: flex;
@@ -27,7 +31,7 @@
         padding-right: 37px;
         border-right: 1px solid #d4d4d8;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
             display: none;
         }
     }
@@ -50,7 +54,7 @@
         padding: 14px;
         background-color: $accent;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
             display: none;
         }
     }
@@ -66,30 +70,88 @@
         display: none;
         flex-direction: column;
         gap: 10px;
+        transition: all .4s linear;
 
         span {
+            transition: all .4s linear;
             display: block;
             width: 50px;
             height: 4px;
             background-color: $accent;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
             display: flex;
         }
     }
 }
 
 .header-mobile {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    height: 100vh;
     display: none;
+    padding: 40px 0px;
+    text-align: center;
+    z-index: 20;
+    background-color: #fff;
+    transition: all 0.4s linear;
+    transform: translateY(-120%);
 
-    &__nav {}
+    &__nav {
+        margin-bottom: 64px;
+    }
 
-    &__list {}
+    &__list {
+        li:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
 
-    &__link {}
+    &__link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+    }
 
-    &__button {}
+    &__button {
+        display: inline;
+        border-radius: 9px;
+        padding: 14px;
+        background-color: $accent;
+    }
 
-    &__button-link {}
+    &__button-link {
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: 133%;
+        color: $white;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header__menu.active {
+        span:nth-child(2) {
+            display: none;
+        }
+
+        span:nth-child(1) {
+            position: relative;
+            left: 0px;
+            top: 13px;
+            transform: rotate(45deg);
+            margin-bottom: 0;
+        }
+
+        span:nth-child(3) {
+            transform: rotate(-45deg);
+            margin-bottom: 0;
+        }
+    }
+
+    .header-mobile.active {
+        transform: translateY(0);
+        display: block;
+    }
 }

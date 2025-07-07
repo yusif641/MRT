@@ -1,5 +1,5 @@
 .home {
-    padding: 60px 0px;
+    padding: 150px 0px;
 
     &__container {
         display: flex;
@@ -63,14 +63,31 @@
 
         img {
             width: 100%;
+            border-radius: 15px;
         }
     }
-
+    
     &__icon {
         position: absolute;
         width: 84px;
         height: 84px;
-        bottom: -30px;
-        right: 0px;
+        bottom: 0px;
+        right: 10px;
+        animation: 6s linear 1s infinite iconAnimation;
+        z-index: 2;
     }
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(-20px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+.swiper {
+    max-width: 600px;
 }
