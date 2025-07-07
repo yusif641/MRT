@@ -919,6 +919,7 @@ a {
           justify-content: center;
   background: rgba(81, 110, 255, 0.6);
   z-index: 100;
+  overflow-y: auto;
 }
 @media (max-width: 528px) {
   .popup {
