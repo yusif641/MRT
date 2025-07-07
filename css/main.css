@@ -538,6 +538,7 @@ a {
   height: 100vh;
   display: none;
   padding: 40px 0px;
+  margin-top: 30px;
   text-align: center;
   z-index: 20;
   background-color: #fff;
@@ -545,6 +546,12 @@ a {
   transition: all 0.4s linear;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-mobile__nav {
   margin-bottom: 64px;
@@ -554,7 +561,7 @@ a {
 }
 .header-mobile__link {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 150%;
 }
 .header-mobile__button {
