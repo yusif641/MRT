@@ -122,6 +122,11 @@ a {
 .home {
   padding: 150px 0px;
 }
+@media (max-width: 768px) {
+  .home {
+    padding: 90px 0px;
+  }
+}
 .home__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +441,11 @@ a {
   width: 100%;
   background-color: #fff;
   z-index: 99;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 0px;
+  }
 }
 .header__container {
   display: -webkit-box;
