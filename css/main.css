@@ -843,7 +843,7 @@ a {
   }
 }
 .contacts__item {
-  max-width: 190px;
+  max-width: 210px;
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 30px;
@@ -921,6 +921,22 @@ a {
   line-height: 120%;
   letter-spacing: -0.02em;
   max-width: 183px;
+}
+.item-contacts__phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.item-contacts__number {
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #516eff;
 }
 
 .popup {
